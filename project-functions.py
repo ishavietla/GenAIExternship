@@ -1,18 +1,14 @@
-# Recursive Artistry Program
-# Showcases recursion: factorial, Fibonacci, and fractal drawing.
 
 import turtle
 
 # Recursive factorial function
 def factorial(n):
-    """Recursively computes factorial of n."""
     if n == 0 or n == 1:
         return 1
     return n * factorial(n - 1)
 
 # Recursive Fibonacci function
 def fibonacci(n):
-    """Recursively computes nth Fibonacci number."""
     if n <= 0:
         return 0
     elif n == 1:
@@ -21,7 +17,6 @@ def fibonacci(n):
 
 # Recursive fractal tree drawing using turtle
 def draw_fractal_tree(branch_length, t):
-    """Draws a recursive fractal tree."""
     if branch_length > 5:
         t.forward(branch_length)
         t.right(20)
@@ -33,7 +28,6 @@ def draw_fractal_tree(branch_length, t):
 
 # Input validation for positive integers
 def get_positive_integer(prompt):
-    """Prompts user for positive integer input."""
     while True:
         try:
             value = int(input(prompt))
